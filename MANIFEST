@@ -1,0 +1,5 @@
+.gitignore
+Build.PL
+lib/Digest/MD5.js
+MANIFEST			This list of files
+README
