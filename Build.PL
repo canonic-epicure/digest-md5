@@ -1,13 +1,12 @@
-use Module::Build::JSAN::Installable;
+use inc::Module::JSAN::DSL;
 
-my $build = Module::Build::JSAN::Installable->new(
-	module_name    => 'Digest.MD5',
-	create_makefile_pl => 'passthrough',
-	dist_version   => 0.01,
-	dist_author   => 'SamuraiJack',
-	dist_abstract  => 'Digest md5',
-	license        => 'perl',
-);
+name            Digest.MD5
 
-$build->create_build_script;
+version         0.01
+author          'Nickolay (SamuraiJack) Platonov <root@symbie.org>'
 
+abstract        'Digest.MD5 for JavaScript'
+license         bsd
+
+
+requires        Joose   3.001
